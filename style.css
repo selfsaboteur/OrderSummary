@@ -1,0 +1,127 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    @font-face {
+        font-family: "Red Hat Display";
+        src: url(https://fonts.google.com/specimen/Red+Hat+Display) format(truetype);
+    }
+    
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #e0e8ff;
+        font-family: "Red Hat Display", Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .content {
+        width: 450px;
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        display: grid;
+        margin-top: 100px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        text-align: center;
+        -webkit-box-shadow: 0px 35px 19px -6px rgba(82, 59, 255, 0.16);
+        box-shadow: 0px 35px 19px -6px rgba(82, 59, 255, 0.16);
+    }
+    
+    .heroimage {
+        position: absolute;
+        top: 0px;
+        width: 450px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    h2 {
+        margin-top: 260px;
+        margin-bottom: 25px;
+        color: hsl(223, 47%, 23%);
+    }
+    
+    p {
+        margin: 0px 50px 25px 50px;
+        color: hsl(224, 23%, 55%);
+    }
+    
+    .price {
+        display: grid;
+        background-color: hsl(225, 100%, 98%);
+        color: hsl(224, 23%, 55%);
+        grid-template-columns: 45px 140px 135px;
+        border-radius: 10px;
+        padding: 20px;
+        width: 320px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+    .price h4 {
+        color: hsl(223, 47%, 23%);
+        margin: 3px 0px 4px 8px;
+    }
+    
+    .price a {
+        font-weight: 600;
+        font-size: 14px;
+        color: hsl(245, 75%, 52%);
+        text-align: end;
+        margin: 13px 7px 0px 0px;
+    }
+    
+    .proceed {
+        width: 340px;
+        padding: 15px 10px;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        -webkit-box-shadow: 0px 35px 19px -6px rgba(82, 59, 255, 0.16);
+        box-shadow: 0px 35px 19px -6px rgba(82, 59, 255, 0.16);
+    }
+    
+    .cancel {
+        margin-bottom: 40px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        color: hsl(224, 23%, 55%);
+    }
+    
+    @media screen and (max-width: 500px) {
+        .content {
+            width: 350px;
+        }
+        .heroimage {
+            width: 350px;
+        }
+        h2 {
+            margin-top: 200px;
+        }
+        p {
+            margin: 0px 20px 25px 20px;
+        }
+        .price {
+            grid-template-columns: 40px 160px 75px;
+            width: 280px;
+            padding: 10px;
+            margin-left: 25px;
+        }
+        .price a {
+            margin-right: 0px;
+        }
+        .proceed {
+            width: 280px;
+        }
+        body {
+            background-image: url(images/pattern-background-mobile.svg);
+        }
+    }
